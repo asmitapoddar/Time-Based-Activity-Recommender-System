@@ -5,8 +5,7 @@ import pandas as pd
 
 #Reading users file(943*5):
 u_cols = ['user_id', 'age', 'sex', 'occupation', 'zip_code']
-users = pd.read_csv('ml-100k/u.user', sep='|', names=u_cols,
- encoding='latin-1')
+users = pd.read_csv('ml-100k/u.user', sep='|', names=u_cols, encoding='latin-1') #Give full path of where dataset is stored
 #print users
 print users.shape       #i.e. dimensions: 943*5
 print users.head()
